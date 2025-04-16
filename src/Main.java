@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         MaterialManager manager = new MaterialManager();
-        //tao 5 bot
+
         for (int i = 1; i <= 5; i++) {
             manager.add(new CrispyFlour("C "+i,"Bột "+i, LocalDate.now().minusMonths(i),10000,i*2));
 

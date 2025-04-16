@@ -7,11 +7,11 @@ public class MaterialManager {
         materials.add(material);
         System.out.println("Đã Thêm "+material.getName());
     }
-    public void delete(String id,Material material) {
+    public void delete(String id) {
         for(Material m : materials) {
             if(m.getId().equals(id)) {
-                materials.remove(material);
-                System.out.println("Đã xóa "+material.getName());
+                materials.remove(m);
+                System.out.println("Đã xóa "+m.getName());
             }
         }
 
